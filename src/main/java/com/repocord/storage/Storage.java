@@ -2,6 +2,7 @@ package com.repocord.storage;
 
 import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;
+import net.dv8tion.jda.api.entities.Member;
 import net.dv8tion.jda.internal.utils.Checks;
 
 import java.io.File;
@@ -25,6 +26,10 @@ public class Storage {
         this.members = new HashMap<>();
 
         reload();
+    }
+
+    public MemberData getMember(Member member) {
+        return getMember(member.getGuild().getId(), member.getId());
     }
 
     public MemberData getMember(String guildId, String id) {

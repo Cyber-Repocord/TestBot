@@ -13,7 +13,7 @@ import java.io.IOException;
 public class TestBot {
     public static void main(String[] args) throws LoginException, InterruptedException, IOException {
         JDA jda = JDABuilder
-                .createLight("MTAxNDYxMDg3MjE3NTQ0ODA4OA.GobNQY.MJumI1QwAQKuK2YvJAA8IhYaEQdDXf85n6orcI")
+                .createLight("MTAxNDYxMDg3MjE3NTQ0ODA4OA.GuVhtG.5VPZSikLRqUnGcsewfsFlGJJAS5k55ojc0pUIY")
                 .enableIntents(GatewayIntent.GUILD_MESSAGES)
                 .build()
                 .awaitReady();
